@@ -20,7 +20,7 @@ El mayor desafío técnico era filtrar ~200.000 registros instantáneamente con 
 * **UI Dinámica (Jetpack Compose):** Se implementó una vista responsiva utilizando `LocalConfiguration.current.orientation`. En Portrait se utiliza navegación entre pantallas (Lista -> Mapa), mientras que en Landscape ambas vistas conviven en la misma pantalla usando `weight(1f)`.
 * **Persistencia Nativa:** Para guardar los favoritos sin usar librerías externas (como Room), utilicé `SharedPreferences`, guardando un `Set<String>` con los IDs de las ciudades para lograr búsquedas y actualizaciones en tiempo $O(1)$.
 
-## 🗺️ Nota importante sobre Google Maps SDK
+## Nota importante sobre Google Maps SDK
 
 La integración con el mapa interactivo está completamente implementada utilizando `com.google.maps.android:maps-compose`.
 
